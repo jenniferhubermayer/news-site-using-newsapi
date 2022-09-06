@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt: NewsApi</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="to-top">
+      <div id="to-top-image"></div>
+    </div>
+    <header>
+      <h1>super(c)ode news</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quasi sed
+        expedita ipsam dolore pariatur cumque saepe autem, aut itaque quo ut
+        unde eaque sit exercitationem hic atque, aliquam labore.
+      </p>
+      <h2>Filter</h2>
+      <form method="get" autocomplete="on">
+        <input
+          type="text"
+          name="keyword-search"
+          id="keyword-search"
+          placeholder="keyword"
+        />
+      <h2>Sort by</h2>
+      <select name="sort-by" id="sort-by">
+        <option value="published-at" selected="selected">publishing date</option>
+        <option value="popularity">popularity</option>
+      </select>
+      <h2>Change language</h2>
+      <select name="set-language" id="set-language">
+        <option value="de" selected="selected">german</option>
+        <option value="en">englisch</option>
+      </select>
+      <input type="submit" id="keyword-search-btn" value="Filter" />
+    </form>
+
+      <h2>Articles: <span id="article-count-num"></span></h2>
+    </header>
+    <main></main>
+  </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
