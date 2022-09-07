@@ -139,7 +139,7 @@ document.querySelector(`#to-top-image`).addEventListener(`click`, () => {
 
 // FETCH CALL ON SUBMIT ###################################
 // ########################################################
-searchForKeyword = (event) => {
+let searchForKeyword = (event) => {
     event.preventDefault();
 
     getSearchValues();
