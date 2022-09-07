@@ -26,6 +26,7 @@ For this project, we'll use the News APIs (https://newsapi.org/) to create a new
 ### Links
 
 - Solution URL: [https://github.com/jenniferhubermayer/news-site-using-newsapi](https://github.com/jenniferhubermayer/news-site-using-newsapi)
+- Live Site URL: [https://jenniferhubermayer.github.io/news-site-using-newsapi/](https://jenniferhubermayer.github.io/news-site-using-newsapi/)
 
 ## My process
 
