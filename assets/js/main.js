@@ -8,22 +8,22 @@ let articleCountText = document.querySelector(`#article-count-num`);
 // FUNCTIONS ##############################################
 // ########################################################
 
-clearArticlesSection = () => {
+let clearArticlesSection = () => {
     document.querySelector(`main`).innerText = "";
 };
 
-clearKeywordInput = () => {
+let clearKeywordInput = () => {
     document.querySelector(`#keyword-search`).value = "";
 };
 
-srollToTop = () => {
+let srollToTop = () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
 };
 
-getSearchValues = () => {
+let getSearchValues = () => {
     keywordSearchInput = document.querySelector(`#keyword-search`).value;
     sortByInput = document.querySelector(`#sort-by`).value;
     setLanguageInput = document.querySelector(`#set-language`).value;
