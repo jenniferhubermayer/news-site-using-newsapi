@@ -10,18 +10,18 @@ let articleCountText = document.querySelector(`#article-count-num`);
 
 clearArticlesSection = () => {
     document.querySelector(`main`).innerText = "";
-}
+};
 
 clearKeywordInput = () => {
     document.querySelector(`#keyword-search`).value = "";
-}
+};
 
 srollToTop = () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
-}
+};
 
 getSearchValues = () => {
     keywordSearchInput = document.querySelector(`#keyword-search`).value;
@@ -30,7 +30,7 @@ getSearchValues = () => {
     if (keywordSearchInput == 0){
         keywordSearchInput = "tesla";
     }
-}
+};
 
 // WRITE MAIN SECTION #####################################
 // ########################################################
@@ -144,7 +144,7 @@ searchForKeyword = (event) => {
 
     getSearchValues();
     showNews(keywordSearchInput, sortByInput, setLanguageInput);
-}
+};
 
 const form = document.querySelector('form');
 form.addEventListener('submit', searchForKeyword);
@@ -167,7 +167,7 @@ let showNews = (keywordSearchInput, sortByInput, setLanguageInput) =>{
     .then((data) => {
         writeHtml(data);
     });
-}
+};
 showNews(keywordSearchInput, sortByInput, setLanguageInput);
 
 // CLEAR SEARCH ON DOCUMENT LOAD ##########################
